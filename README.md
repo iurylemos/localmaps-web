@@ -1,7 +1,7 @@
 ## Web Local maps
 
 [x] Iniciar projeto - CRA
-[] Organizar pastas
+[x] Organizar pastas
 [] Importar fontes
 [] Instalar dependências
 [] Configurar tema
