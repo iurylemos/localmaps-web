@@ -2,6 +2,7 @@ import React from "react";
 import { ThemeProvider } from "styled-components";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import HomePage from "./views/Home";
+import NewPage from "./views/New";
 
 const App: React.FC = () => {
   const theme = {
@@ -19,7 +20,9 @@ const App: React.FC = () => {
           <Route exact path="/">
             <HomePage />
           </Route>
-          <Route path="/new">Renderizando New</Route>
+          <Route path="/new">
+            <NewPage />
+          </Route>
         </Switch>
       </BrowserRouter>
     </ThemeProvider>

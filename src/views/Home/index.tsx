@@ -9,6 +9,7 @@ import {
   SubTitle,
   ButtonBox,
 } from "./styles";
+import { Link } from "react-router-dom";
 
 const HomePage: React.FC = () => {
   return (
@@ -16,10 +17,12 @@ const HomePage: React.FC = () => {
       <LeftContainer>
         <Title>O mapa local da sua cidade</Title>
         <SubTitle>Encontre no comercio local, tudo que precisa</SubTitle>
-        <Button>
-          <ButtonBox>{">"}</ButtonBox>
-          Cadastre um ponto comercial
-        </Button>
+        <Link to="/new">
+          <Button>
+            <ButtonBox>{">"}</ButtonBox>
+            Cadastre um ponto comercial
+          </Button>
+        </Link>
       </LeftContainer>
       <RightContainer>
         <Image />
