@@ -3,6 +3,8 @@ import { ThemeProvider } from "styled-components";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import HomePage from "./views/Home";
 import NewPage from "./views/New";
+import "react-toastify/dist/ReactToastify.css";
+import { ToastContainer } from "react-toastify";
 
 const App: React.FC = () => {
   const theme = {
@@ -25,6 +27,7 @@ const App: React.FC = () => {
           </Route>
         </Switch>
       </BrowserRouter>
+      <ToastContainer />
     </ThemeProvider>
   );
 };
